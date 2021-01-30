@@ -28,6 +28,11 @@
               Lihat Profile Saya
             </router-link>
           </li>
+          <li v-if="user" class="nav-item ml-2">
+            <router-link to="/employee" class="btn btn-light">
+              Employee
+            </router-link>
+          </li>
         </ul>
 
         <ul class="navbar-nav ml-auto">

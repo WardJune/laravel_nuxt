@@ -1,15 +1,15 @@
 <template>
   <card :title="$t('home')">
-    {{ $t('you_are_logged_in') }}
+    {{ $t("you_are_logged_in") }}
   </card>
 </template>
 
 <script>
 export default {
-  middleware: 'auth',
+  middleware: "auth",
 
-  head () {
-    return { title: this.$t('home') }
-  }
-}
+  head() {
+    return { title: this.$t("home") };
+  },
+};
 </script>

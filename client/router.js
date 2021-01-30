@@ -18,6 +18,9 @@ const routes = [
 
   { path: '/home', name: 'home', component: page('home.vue') },
   { path: '/profile', name: 'profile', component: page('profile.vue') },
+  { path: '/employee', name: 'employee.index', component: page('employees/index.vue') },
+  { path: '/employee/create', name: 'employee.create', component: page('employees/create.vue') },
+  { path: '/employee/update/:id', name: 'employee.update', component: page('employees/update/_id.vue') },
   {
     path: '/settings',
     component: page('settings/index.vue'),
