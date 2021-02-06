@@ -9,6 +9,13 @@ class Presence extends Model
 {
     use HasFactory;
 
+    protected $casts = [
+        'metadata' => 'array',
+        'latitude' => 'float',
+        'longitude' => 'float'
+    ];
+    protected $guarded = [];
+
     public function employee()
     {
         return $this->belongsTo(Employee::class);

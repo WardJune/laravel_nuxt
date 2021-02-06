@@ -11,6 +11,7 @@ use App\Http\Controllers\Settings\PasswordController;
 use App\Http\Controllers\Settings\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\PresenceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::patch('settings/password', [PasswordController::class, 'update']);
 
     Route::resource('employee', EmployeeController::class);
+    Route::resource('presence', PresenceController::class);
 });
 
 Route::group(['middleware' => 'guest:api'], function () {
